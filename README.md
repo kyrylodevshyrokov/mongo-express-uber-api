@@ -25,6 +25,7 @@ This is a convenient API, a prototype of Uber, that allows you to manage drivers
 PORT=3000
 ```
 In case if you want to connect your server to databse via MongoDB Atlas, include link for connection also to `.env` file.
+
 4. Run `npm start` to start the server for production mode or run `npm run start:dev` for development mode.
 5. Run `npm test` to execute all mocha tests and test API.
 
