@@ -1,4 +1,5 @@
 const Driver = require("../models/driver");
+const status = require('http-status')
 
 module.exports = {
   greeting(req, res) {
@@ -52,7 +53,7 @@ module.exports = {
     const driverId = req.params.id;
 
     Driver.findByIdAndDelete({ _id: driverId })
-      .then((driver) => res.status(204).send(driver))
+      .then((driver) => res.status(status.NO_CONTENT).send(driver))
       .catch(next);
   },
 };
